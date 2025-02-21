@@ -1,0 +1,225 @@
+#root {
+  
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 0em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.logo{
+  height: 80;
+ 
+}
+
+.nav-items > ul > li {
+ 
+  margin-right: 0.5cm;
+  margin-top: 1cm;
+
+}
+
+.nav-items > ul {
+
+  display: flex;
+  list-style-type:none;
+  font-size: larger;
+
+}
+
+.header{
+  display: flex;
+ justify-content: space-between;
+ background-color: grey;
+ height:20vh;
+ width: 200vh;
+}
+
+.body-container{
+  background-image: url(https://content.asos-media.com/-/media/homepages/unisex/generic-hp/jan-2025/generic-hp/eng_generic_desktop_1440x698.jpg);
+  
+  
+  height: 100vh;
+  width: 200vh;
+}
+
+
+
+.men-women{
+  align-items: center;
+  
+}
+
+.btn-1{
+  font-weight: 900;
+  text-decoration: aqua;
+  height: 100px;
+  width: 300px;
+  margin-top: 30%;
+  font-style: italic;
+  font-size: xx-large;   
+
+}
+
+.btn-1:hover{
+  border-radius: 8px;
+  border-style:inset;
+  cursor: pointer;
+}
+
+.footer-container{
+  display: flex;
+ justify-content:space-evenly;
+ background-color: grey;
+ margin-top: 0.5cm;
+}
+
+.nav-items-footer > ul {
+  display: flex;
+  list-style-type:none;
+  font-size: larger;
+  
+}
+
+.nav-items-footer > ul > li {
+ 
+  margin-right: 0.5cm;
+
+
+}
+.list{
+  color: grey;
+  font-size: small;
+  font-style: italic;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  
+}
+.list a{
+  color:lightgray;
+}
+
+.list img{
+  height: 300px;
+  width: 200px;
+
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  width: 200vh;
+  height: 500vh;
+  align-items: left;
+
+}
+
+.list >ul >li{
+  list-style-type: none;
+  
+}
+
+.list li{
+  color:darkolivegreen;
+  text-wrap-style:balance;
+  text-align: left;
+  text-overflow: clip;
+  text-justify: newspaper;
+  width: 300px;
+
+}
+
+/* .card-container >ul{
+
+  width: 50vh;
+  height: 50vh;
+
+} */
+.filter-container{
+  color: lightgray;
+  gap: 50px;
+  padding: 2px; 
+}
+
+.search-container{
+  padding: 2px;
+  margin: 3px 3px;
+  flex-wrap: wrap;
+  width: 50vh;
+  height: 5vh;
+}
+
+.product-display{
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-page-container img{
+  height:600px;
+  width:500px;
+}
+.btn-cart{
+  width:200px;
+  height:50px;
+  color: black; 
+  font-size: larger;
+  background-color:antiquewhite;
+  margin: 10px 10px;
+}
+.btn-wishlist{
+  width:200px;
+  height:50px;
+  color: coral;
+  font-size: larger;
+  background-color: blanchedalmond;
+  margin: 10px 10px;
+}
+.product-page-container select{
+  background-color: cornsilk;
+  color:chocolate;
+  height: 50px;
+  width:30px;
+  margin: 10px 10px;
+}
+
+
