@@ -2,16 +2,23 @@
 import { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
 import fakeFetch from "./fakeFetch";
-
-
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
 
 const ProductList = () =>{
+    const dispatch = useDispatch();
     let newinfo;
 
     const[prodinfo,set_prodinfo]=useState([]);
 
     const {prodid} = useParams();
     console.log(prodid);
+
+    function handleAdditem(newitem){
+        console.log(newitem)
+        dispatch(addItem(newitem));
+
+    }
     
 
     useEffect(()=>{
@@ -48,8 +55,8 @@ return(
         <option value="medium">M</option>
         <option value="large">L</option>
     </select>
-    <button className="btn-cart">Add to Cart</button>
-    <button className="btn-wishlist">Add to Wishlist</button>
+    <button className="btn-cart" onClick={()=>handleAdditem(newinfo[0])}>Add to Cart</button>
+    <button className="btn-wishlist" >Add to Wishlist</button>
     
 
 </div>

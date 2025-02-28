@@ -1,4 +1,8 @@
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import Cart from "./cart";
 const Header = () => {
+    const cartItems = useSelector((store)=>store.cart.items);
     return(
     <div className="header">
         <div className="logo-container"> 
@@ -8,7 +12,9 @@ const Header = () => {
             <ul>
                 <li >Account</li>
                 <li>Wishlist</li>
-                <li>Cart</li>
+                <Link to={"/cart"}>
+                <li>Cart {cartItems.length}</li>
+                </Link>
             </ul>
 
         </div>
