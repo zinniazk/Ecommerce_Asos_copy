@@ -7,7 +7,10 @@ import ProductList from './components/productlist'
 import { Provider } from 'react-redux'
 import appStore from './utils/appstore'
 import Layout from './components/Layout'
-import Cart from './components/cart'
+import Cart from './components/Cart'
+import Login from './components/Login'
+import Account from './components/Account'
+import Wishlist from './components/Wishlist'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,6 +29,9 @@ function App() {
             <Route path='product' element={<Card/>}/>
             <Route path='product/:prodid' element={<ProductList/>}/>
             <Route path='/cart' element={<Cart/>}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='/account' element={<Account/>}/>
+            <Route path='/wishlist' element={<Wishlist/>}/>
          </Route>
        </Routes>
     </div>
