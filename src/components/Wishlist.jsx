@@ -1,4 +1,4 @@
-const wishlist = () =>{
+const Wishlist = () =>{
 
 }
-export default wishlist;
+export default Wishlist;
