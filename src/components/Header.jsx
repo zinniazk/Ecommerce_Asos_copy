@@ -12,11 +12,8 @@ const Header = () => {
         </div>
         <div className="nav-items">
             <ul>
-                <Link to={"/account"}>
-                <li>Account</li>
-                </Link>
-                <Link to={"/wishlist"}>
-                <li>Wishlist</li>
+                <Link to={"/"}>
+                <li>Home</li>
                 </Link>
                 <Link to={"/cart"}>
                 <li>Cart {cartItems.length}</li>
