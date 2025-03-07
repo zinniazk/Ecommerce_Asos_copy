@@ -1,8 +1,10 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import Cart from "./Cart";
+
 const Header = () => {
     const cartItems = useSelector((store)=>store.cart.items);
+    const userlog = useSelector((store)=>store.user);
+    console.log("userlog"+userlog);
     return(
     <div className="header">
         <div className="logo-container"> 
@@ -20,7 +22,10 @@ const Header = () => {
                 <li>Cart {cartItems.length}</li>
                 </Link>
                 <Link to={"/login"}>
-                <li>Login</li>
+                <li>{(userlog===null)?"Login":"Logged in "+ userlog}</li>
+                </Link>
+                <Link to={"/signout"}>
+                <li>{(userlog===null)?"":"Sign Out"}</li>
                 </Link>
                 
 
