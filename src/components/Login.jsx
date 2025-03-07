@@ -2,10 +2,12 @@ import { useState } from "react";
 import { useRef } from "react";
 import {checkValidate1} from "../utils/validate";
 import { checkValidate2 } from "../utils/validate";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 const Login = () =>{
 
 
+    const auth = getAuth();
     const name = useRef(null);
     const emailaddress = useRef(null);
     const password = useRef(null);
@@ -30,10 +32,27 @@ const Login = () =>{
         }
         else
         {
-            const messageSignUp = checkValidate2(name.current.value, emailaddress.current.value,password.current.value);
-            console.log(messageSignUp);
+        const messageSignUp = checkValidate2(name.current.value, emailaddress.current.value,password.current.value);
+        console.log(messageSignUp);
         seterrormsg(messageSignUp);
+        if(messageSignUp===null)
+        {
+            createUserWithEmailAndPassword(auth, emailaddress.current.value, password.current.value)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    
+    // ..
+  });
         }
+        }
+
+
 
     }
     return(
