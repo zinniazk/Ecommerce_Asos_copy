@@ -17,7 +17,7 @@ const fakeFetch = (url) =>{
                     data:[
                         
                             
-                                {id: 101, name: "Aape By A Bathing Ape Now knitted jumper in black", imgsrc: "./src/assets/images/207571408-2.avif", price:170, category: "Jackets"},
+                                {id: 101, name: "Aape By A Bathing Ape Now knitted jumper in black", imgsrc: "./public/assets/images/207571408-2.avif", price:170, category: "Jackets"},
                                 {id: 102, name: "Jack & Jones oversize quarter zip sweatshirt in grey", imgsrc:  "./src/assets/images/men_img_2_jnj.avif", price:32, category: "Tops"},
                                 {id: 103, name: "Topman car coat in heritage check", imgsrc:  "./src/assets/images/men_img_3_topman.avif", price:95,category: "Jackets" },
                                 {id: 104, name: "River Island brushed stripe cardigan in multi", imgsrc:  "./src/assets/images/men_img_4_river.avif", price:45,category: "Tops"},
