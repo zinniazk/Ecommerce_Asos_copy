@@ -270,5 +270,37 @@
   align-items: left;
 
 }
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Styles for larger screens (laptop/desktop) */
+@media (min-width: 769px) {
+  .nav {
+    flex-direction: row;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* two columns on desktop */
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;   /* one column on mobile */
+  }
+}
 
 
