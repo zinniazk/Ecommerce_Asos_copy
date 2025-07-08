@@ -23,24 +23,28 @@ Asos copy is an attempt to create a specific category for only Mens Wear clothin
 
 ## 🚀 Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Feature 1 : Login or Sign up with username and password.
+- Feature 2: Navigate and Scroll through Mens clothing
+- Feature 3: Filter clothing using Price Ranges and/or Categories (e.g. Tops, Jackets etc)
+- Feature 4: Search a clothing item (e.g. Top)
+- Feature 5: Open a clothing item in new tab with options to Add to Cart or Wishlist
+- Feature 6: Check cart to view all items added. Options to individually remove items
+  
 
 ## 🛠️ Tech Stack
 
-- Language: e.g., JavaScript, Python
-- Framework: e.g., React, Flask
-- Tools: e.g., Webpack, Docker
+- Language: JavaScript
+- Framework: React, Redux
+- Tools: Vite
 
 ## 📦 Installation
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/project-name.git
+git clone https://github.com/yourusername/Ecommerce_Asos_copy.git
 
 # Navigate into the directory
-cd project-name
+cd Ecommerce_Asos_copy
 
 # Install dependencies
 npm install
